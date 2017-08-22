@@ -1,0 +1,24 @@
+{
+    "name": "serversidebim/ifcguid",
+    "description": "Converter for GUID's in accordance with BuildingSmart's GUID specification",
+    "keywords": ["GUID", "IFC", "BIM"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maarten Veerman",
+            "email": "mtveerman@gmail.com"
+        }
+    ],
+    "type": "project",
+    "require": {
+		"php": ">=5.4"
+    },
+	"require-dev": {
+		"phpunit/phpunit": "5.2.*"
+    },
+	"autoload": {
+        "psr-4": {
+            "Serversidebim\\IFCGuid\\": "src/"
+        }
+    }
+}
