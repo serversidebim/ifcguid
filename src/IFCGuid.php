@@ -209,7 +209,7 @@ class IFCGuid{
         
         $bin = "";
         
-        for ($i=0;$i<strlen($ifc);$i) {
+        for ($i=0;$i<strlen($ifc);$i++) {
             $char = $ifc[$i];
             if ($binpart = self::ifcPartToBin($char)) {
                 
@@ -239,9 +239,10 @@ class IFCGuid{
             trigger_error("Character $ifc is not a valid ifc character");
             return false;
         }
-        
+
         $bin = decbin($pos);
         
+		return $bin;
     }
     
     /**
